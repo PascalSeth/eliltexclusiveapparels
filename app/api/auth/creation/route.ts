@@ -32,9 +32,9 @@ export async function GET() {
   }
 
   return NextResponse.redirect(
-    // process.env.NODE_ENV === "development"
-    //   ? 
+    process.env.NODE_ENV === "development"
+      ? 
     "http://localhost:3000/"
-      // : "https://eliltexclusiveapparels.vercel.app/"
+      : "https://eliltexclusiveapparels.netlify.app/"
   );
 }
