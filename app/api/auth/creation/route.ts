@@ -35,6 +35,6 @@ export async function GET() {
     process.env.NODE_ENV === "development"
       ? 
     "http://localhost:3000/"
-      : "https://eliltexclusiveapparels.netlify.app/"
+      : "https://Vidols Wear.netlify.app/"
   );
 }

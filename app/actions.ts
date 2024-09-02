@@ -267,11 +267,11 @@ export async function checkOut() {
       success_url:
         process.env.NODE_ENV === "development"
           ? "http://localhost:3000/payment/success"
-          : "https://eliltexclusiveapparels.vercel.app/payment/success",
+          : "https://Vidols Wear.vercel.app/payment/success",
       cancel_url:
         process.env.NODE_ENV === "development"
           ? "http://localhost:3000/payment/cancel"
-          : "https://eliltexclusiveapparels.vercel.app/payment/cancel",
+          : "https://Vidols Wear.vercel.app/payment/cancel",
       metadata: {
         userId: user.id,
       },

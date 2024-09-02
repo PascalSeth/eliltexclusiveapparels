@@ -10,6 +10,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { redis } from "@/app/lib/redis";
 import { Cart } from "@/app/lib/interfaces";
+import Image from "next/image";
 
 export async function Navbar() {
   const { getUser } = getKindeServerSession();
@@ -24,9 +25,7 @@ export async function Navbar() {
      <div className="flex max-w-6xl mx-auto items-center w-full justify-between">
       <div className="flex items-center">
         <Link href="/">
-          <h1 className="text-black font-bold text-xl lg:text-3xl">
-            Exclusive<span className="text-primary">Apparel</span>
-          </h1>
+           <Image src="/logo.png" width={50 } height={50} alt=""/>
         </Link>
         <NavbarLinks />
       </div>
