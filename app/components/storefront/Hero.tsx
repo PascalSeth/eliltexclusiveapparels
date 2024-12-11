@@ -64,7 +64,7 @@ export function Hero() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <Slider {...settings} className='max-w-6xl mx-auto overflow-hidden'>
+    <Slider {...settings} className='max-w-6xl w-full mx-auto overflow-hidden'>
       {banners.map((item) => (
         <div key={item.id} className="relative h-[40vh] lg:h-[70vh]">
           <Image
